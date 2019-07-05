@@ -6,6 +6,7 @@ var logger = require('morgan');
 var hbs = require('express-handlebars');
 
 var sessionMidlleware = require('./a/sessionManager').sessionMidlleware;
+var httpLogger = require('./a/httpLogger').httpLogger;
 
 var indexRouter = require('./routes/index');
 
@@ -21,8 +22,11 @@ app.engine('hbs', hbs({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, "views"));
 
-// logging+parsing
-app.use(logger('dev')); // log requests (dev is predifined (minimalstic) format)
+// (custom) logging
+app.use(httpLogger);
+
+// parsing
+// app.use(logger('dev')); // log requests (dev is predifined (minimalstic) format)
 app.use(express.json()); // parse json type requests
 app.use(express.urlencoded({extended: false})); // parse application/x-www-form-urlencoded type requests (only POST)
 app.use(cookieParser()); // parse cookies
@@ -30,7 +34,7 @@ app.use(cookieParser()); // parse cookies
 // public
 app.use(express.static(path.join(__dirname, 'public'))); // routes public files
 
-// custom logging+parsing
+// (custom) session handling
 app.use(function(req, res, next) {req.locals = {}; next()});
 app.use(sessionMidlleware); // this needs to be below public (if not first requests (after server startup) for public files will be fukin slow (idk why))
 
