@@ -1,0 +1,83 @@
+div.logo {
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+}
+
+div.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+div.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.5vw;
+    margin-bottom: 6vw;
+}
+
+p.info {
+    margin-top: 0.7vw;
+    margin-bottom: 0.7vw;
+
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.infoFuture {
+    margin-top: 0.7vw;
+    margin-bottom: 0.5vw;
+
+    font-size: 1.15vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=text].search {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+input[type=text].search:focus {
+    outline: none;
+}
+
+input[type=submit].search {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+
+    background-color: rgb(255, 255, 255);
+
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 0.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    cursor: pointer;
+}
+
+input[type=submit].search:hover {
+    background-color: rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+}
+
+input[type=submit].search:focus {
+    outline: none;
+}

@@ -1,0 +1,32 @@
+<div class="base">
+    <div class="loginPanel">
+        <form action="/user/logedin" method="POST">
+            <div class="loginTitle">
+                <p class="loginTitle">GJHLibrary</p>
+                <p class="loginTitleDetail">Log in</p>
+            </div>
+            <div class="loginField">
+                <p class="loginFieldTitle">Mail</p>
+                {{#if error.mail}}
+                    <input type="text" name="mail" autocomplete="off" spellcheck="false" class="loginField" value={{error.mail}}>
+                {{else}}
+                    <input type="text" name="mail" autocomplete="off" spellcheck="false" class="loginField">
+                {{/if}}
+            </div>
+            <div class="loginField">
+                <p class="loginFieldTitle">Password</p>
+                <input type="password" name="password" autocomplete="off" spellcheck="false" class="loginField">
+            </div>
+
+            {{#if error.message}}
+                <div class="loginError">
+                    <p class="loginErrorText">Error: {{error.message}}</p>
+                </div>
+            {{/if}}
+
+            <div class="submitPanel">
+                <input type="submit" value="Log in" class="login">
+            </div>
+        </form>
+    </div>
+</div>

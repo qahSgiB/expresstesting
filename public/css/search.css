@@ -1,0 +1,63 @@
+div.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+}
+
+a.bookInfo {
+    width: 60vw;
+
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+
+    text-decoration: none;
+    color: black;
+}
+
+div.bookInfo {
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+div.bookInfo:hover {
+    border-color: black;
+}
+
+div.bookInfo:hover > p.title {
+    transform: translateX(4vw);
+}
+
+div.bookInfo:hover > p.author, div.bookInfo:hover > p.available {
+    transform: translateX(1.5vw);
+}
+
+p.title {
+    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
+    margin-left: 1vw;
+
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+
+    transform: translateX(0vw);
+    transition: transform 0.25s ease-in-out;
+}
+
+p.author, p.available {
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    margin-left: 5vw;
+
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+
+    transform: translateX(0vw);
+    transition: transform 0.25s ease-in-out;
+}

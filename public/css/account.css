@@ -1,0 +1,100 @@
+div.accountLogedout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    align-self: flex-end;
+
+    margin-top: 2.5vw;
+    margin-right: 2.5vw;
+
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+
+    background-color: rgb(249, 249, 249);
+}
+
+a.account {
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: solid;
+}
+
+a.account:hover, a.account:active {
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+}
+
+div.accountLogedin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    align-self: flex-end;
+
+    margin-top: 2.5vw;
+    margin-right: 2.5vw;
+
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+
+    background-color: rgb(249, 249, 249);
+}
+
+div.name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+}
+
+img.userIcon {
+    height: 1.5vw;
+
+    margin-right: 0.5vw;
+}
+
+p.name {
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+a.accountLogout {
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
+
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: solid;
+}
+
+a.accountLogout:hover, a.accountLogout:active {
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+}

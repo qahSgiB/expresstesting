@@ -1,0 +1,17 @@
+<div class="base">
+    <div class="results">
+        {{#each results}}
+            <a class="bookInfo" href="">
+            <div class="bookInfo">
+                <p class="title">{{this.title}}</p>
+                <p class="author">by {{this.author}}</p>
+                {{#if this.available}}
+                    <p class="available">{{this.available}} pieces available</p>
+                {{else}}
+                    <p class="available">Book is currently not avialable</p>
+                {{/if}}
+            </div>
+        </a>
+        {{/each}}
+    </div>
+</div>
