@@ -25,7 +25,6 @@ app.set('views', path.join(__dirname, "views"));
 app.use(httpLogger);
 
 // parsing
-// app.use(logger('dev')); // log requests (dev is predifined (minimalstic) format)
 app.use(express.json()); // parse json type requests
 app.use(express.urlencoded({extended: false})); // parse application/x-www-form-urlencoded type requests (only POST)
 app.use(cookieParser()); // parse cookies
