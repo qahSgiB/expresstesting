@@ -21,6 +21,11 @@ div.search {
     margin-bottom: 6vw;
 }
 
+img.logo {
+    width: 8vw;
+    height: auto;
+}
+
 p.info {
     margin-top: 0.7vw;
     margin-bottom: 0.7vw;
